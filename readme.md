@@ -9,9 +9,8 @@ fun main(args : Array<String>){
 ```
 <script>
 function asd() {
-	var targetDiv = document.getElementById("sidebar")[0];
-	targetDiv.innerHTML = "<div>asd</div>";
+	alert('aaa');
 }
 </script>
 
-<button type="button" onclick="alert('aaa')">Click Me!</button>
+<button type="button" onclick="asd()">Click Me!</button>
