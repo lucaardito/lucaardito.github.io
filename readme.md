@@ -10,7 +10,7 @@ fun main(args : Array<String>){
 <script>
 document.onreadystatechange = function() {
      if (document.readyState === 'complete') {
-	document.getElementById("sidebar").innerHTML = "<h1>SIDEBAR</h1>";
+	document.getElementById("sidebar").innerHTML = "<h1 id='website-test'>SIDEBAR</h1>";
      }
 }
 </script>
