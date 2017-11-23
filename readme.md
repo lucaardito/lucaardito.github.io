@@ -8,8 +8,9 @@ fun main(args : Array<String>){
 }
 ```
 <script>
-function asd() {
-document.getElementById("sidebar").innerHTML = "HELLO!";
+document.onreadystatechange = function() {
+     if (document.readyState === 'complete') {
+	document.getElementById("sidebar").innerHTML = "HELLO!";
+     }
 }
-asd();
 </script>
