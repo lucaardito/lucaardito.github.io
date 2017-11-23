@@ -11,6 +11,5 @@ fun main(args : Array<String>){
 function asd() {
 document.getElementById("sidebar").innerHTML = "HELLO!";
 }
+asd();
 </script>
-
-<button type="button" onclick="asd()">Click Me!</button>
