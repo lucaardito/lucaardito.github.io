@@ -9,7 +9,7 @@ fun main(args : Array<String>){
 ```
 <script>
 function asd() {
-	alert('aaa');
+document.getElementById("sidebar").innerHTML = "HELLO!";
 }
 </script>
 
