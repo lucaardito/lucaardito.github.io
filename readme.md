@@ -7,4 +7,7 @@ fun main(args : Array<String>){
     println("Hello World!")
 }
 ```
-<div style="float:right">asd</div>
+<script>
+var targetDiv = document.getElementById("sidebar")[0];
+targetDiv.innerHTML = "<div>asd</div>";
+</script>
