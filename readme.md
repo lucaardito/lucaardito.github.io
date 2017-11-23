@@ -12,5 +12,6 @@ function asd() {
 	var targetDiv = document.getElementById("sidebar")[0];
 	targetDiv.innerHTML = "<div>asd</div>";
 }
-asd();
 </script>
+
+<button type="button" onclick="asd()">Click Me!</button>
