@@ -8,6 +8,8 @@ fun main(args : Array<String>){
 }
 ```
 <script>
-var targetDiv = document.getElementById("sidebar")[0];
-targetDiv.innerHTML = "<div>asd</div>";
+function asd() {
+	var targetDiv = document.getElementById("sidebar")[0];
+	targetDiv.innerHTML = "<div>asd</div>";
+}
 </script>
