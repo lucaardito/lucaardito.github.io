@@ -1,6 +1,6 @@
 # Website Test
 
-Kotlin code snippets example:
+Kotlin code snippet example:
 
 ```kotlin
 fun main(args : Array<String>){
