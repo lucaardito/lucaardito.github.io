@@ -14,4 +14,4 @@ function asd() {
 }
 </script>
 
-<button type="button" onclick="asd()">Click Me!</button>
+<button type="button" onclick="alert('aaa')">Click Me!</button>
