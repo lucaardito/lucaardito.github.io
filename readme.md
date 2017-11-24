@@ -11,8 +11,8 @@ fun main(args : Array<String>){
 <script>
 document.onreadystatechange = function() {
      if (document.readyState === 'complete') {
-	document.getElementById("sidebar").innerHTML = "<center><h1 id='website-test'>SIDEBAR</h1></center>";
+	document.getElementById("sidebar").innerHTML = '<center><h1 id="website-test">SIDEBAR</h1></center>';
      }
-}
+};
 </script>
 
