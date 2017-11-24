@@ -11,7 +11,7 @@ fun main(args : Array<String>){
 <script>
 document.onreadystatechange = function() {
      if (document.readyState === 'complete') {
-	document.getElementById("sidebar").innerHTML = '<center><div class="inner clearfix"><section id="sidebar-content"><h1>SIDEBAR</h1><section></div></center>';
+	document.getElementById("sidebar").innerHTML = '<center><section id="sidebar-content"><h1>SIDEBAR</h1><section></center>';
      }
 };
 </script>
