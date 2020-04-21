@@ -4,7 +4,7 @@ Luca Ardito is an Assistant Professor at the Department of Control and Computer 
 <script>
 document.onreadystatechange = function() {
      if (document.readyState === 'complete') {
-	document.getElementById("sidebar").innerHTML = '<section id="sidebar-content"><p><img id="profilepic" src="https://raw.githubusercontent.com/lucaardito/lucaardito.github.io/master/luca.png"/></p><p>Research topics<ul><li>Android</li><li>GUI Testing</li><li>Energy Awareness</li><li>Green Software</li></ul></p><section>';
+	document.getElementById("sidebar").innerHTML = '<section id="sidebar-content"><p><img id="profilepic" src="https://raw.githubusercontent.com/lucaardito/lucaardito.github.io/master/luca.png"/></p><p><b>Research topics</b><ul><li>Android</li><li>GUI Testing</li><li>Energy Awareness</li><li>Green Software</li></ul></p><section>';
      }
 };
 </script>
