@@ -10,6 +10,7 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 {% seo %}
   </head>
@@ -23,9 +24,6 @@
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         {% if site.github.is_project_page %}
           <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
         {% endif %}
       </div>
     </header>
@@ -49,12 +47,18 @@
 	<br/>Phone: +39.011.090.7170
 	<br/> Email: luca_dot_ardito_at_polito_dot_it
 	<br/>
+	<br/>
+	<br/>
 	{% if site.github.is_user_page %}
           <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
         {% endif %}
 	<br/>
+	<br/>
 	<br/> <a title="Luca Ardito" href="https://www.researchgate.net/profile/Luca_Ardito/"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Luca Ardito" /></a>
 	<br/>
+	<br/>
+	<br/>
+	<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="lucaardito"><a class="LI-simple-link" href='https://it.linkedin.com/in/lucaardito?trk=profile-badge'>Luca Ardito</a></div>
 	<br/> <a href="https://twitter.com/thehardo" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @thehardo</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
           {% if site.show_downloads %}
