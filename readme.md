@@ -6,8 +6,6 @@ I received B.Sc., M.Sc., and Ph.D. in Computer Engineering from Politecnico di T
 
 My current research interests are mobile development and testing, green software, new programming language analysis, and empirical software engineering methodologies. 
 
-I am an associate editor of IEEE Access since November 2019, and I am the Young Professional representative for the IEEE Italy section since February 2020.
-
 # Publications
 
 My updated publication list is available <a href="https://softeng.polito.it/publications/?people=023270"> here </a>
