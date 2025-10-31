@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://luca.ardi.to/sitemap.xml">
-  <link rel="canonical" href="https://luca.ardi.to">
-  <meta name="robots" content="index,follow">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Luca Ardito — Politecnico di Torino">
-  <meta property="og:description" content="Associate Professor (DAUIN). Software engineering, IoT, gamification, green software, technology transfer with Smartotum.">
-  <meta property="og:url" content="https://luca.ardi.to/">
-  <meta property="og:image" content="https://softeng.polito.it/ardito/photo.jpg">
-  <meta name="twitter:card" content="summary_large_image">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Luca Ardito — Politecnico di Torino</title>
@@ -21,7 +12,6 @@
     --link:var(--accent); --link-hover:#ff9800;
     --sticky-offset:125px; /* offset default per le ancore (desktop) */
   }
-
   *,*::before,*::after{ box-sizing:border-box }
   body{ margin:0; background:var(--bg); color:var(--fg);
         font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif; line-height:1.6 }
@@ -29,8 +19,6 @@
   a:hover{ color:var(--link-hover) }
   img{ max-width:100%; height:auto; display:block }
   .container{ max-width:1000px; margin:0 auto; padding:24px }
-
-  /* Header desktop (una riga) */
   header.site{ position:sticky; top:0; background:var(--bg);
                border-bottom:2px solid var(--accent); z-index:1000 }
   .site-inner{ display:flex; align-items:center; justify-content:space-between; gap:16px; }
@@ -38,14 +26,10 @@
   .avatar{ width:44px; height:44px; border-radius:50%; object-fit:cover; border:2px solid var(--border) }
   .title b{ font-size:15px; white-space:nowrap } /* nome su una riga */
   .title span{ color:var(--muted); font-size:13px }
-
-  /* Nav desktop */
   nav{ display:flex; align-items:center; gap:10px }
   nav a{ display:inline-block; padding:10px 12px; border-radius:8px; color:var(--fg); text-decoration:none }
   nav a:hover, nav a[aria-current="page"]{ background:#fff3e0; color:var(--accent) }
   .lang-switch{ font-size:14px; margin-left:auto }
-
-  /* Hero */
   .hero{ background:var(--bg); border-bottom:1px solid var(--border) }
   .hero-inner{ display:grid; grid-template-columns:1fr; gap:22px; padding-block:28px; align-items:center }
   @media (min-width:800px){ .hero-inner{ grid-template-columns:1.5fr .8fr } }
@@ -57,7 +41,6 @@
   .hero-photo .photo{ width:260px; height:260px; border-radius:16px; object-fit:cover;
                       border:1px solid var(--border); box-shadow:0 2px 10px rgba(0,0,0,.06) }
 
-  /* Sezioni */
   section{ padding-block:28px; border-bottom:1px solid var(--border);
            background:var(--bg); scroll-margin-top:var(--sticky-offset) }
   section h2{ margin:0 0 12px; font-size:20px; color:var(--accent) }
@@ -81,18 +64,16 @@
 
   footer{ text-align:center; padding:28px 24px; color:var(--muted);
           border-top:2px solid var(--accent); background:var(--bg) }
-
   section p, .card p, .list li{ text-align:justify }
-
   .menu-toggle{
     display:none; align-items:center; justify-content:center;
     width:42px; height:42px; border:1px solid var(--border); border-radius:12px;
     background:var(--surface); color:var(--accent); line-height:1; cursor:pointer;
     -webkit-tap-highlight-color:transparent; -webkit-appearance:none; appearance:none; outline:none;
   }
-
   @media (max-width:1024px){
     :root{ --sticky-offset:120px } /* più spazio per le ancore con barra menu visibile */
+    /* trasformo l'header in grid: riga 1 (brand + burger), riga 2 (barra nav) */
     .site-inner{
       display:grid;
       grid-template-columns: 1fr auto;
@@ -102,19 +83,16 @@
     }
     .brand{ grid-column:1/2; grid-row:1/2 }
     .menu-toggle{ display:inline-flex; grid-column:2/3; grid-row:1/2; justify-self:end }
-    nav#site-nav{ grid-column:1/3; grid-row:2/3 } /* il nav sta sempre sotto, a tutta larghezza */
-
+    nav#site-nav{ grid-column:1/3; grid-row:2/3 }
     .avatar{ width:36px; height:36px }
     .title b{ font-size:15px }
     .title span{ display:none }
   }
-
   @media (max-width:640px){
     .container{ padding:12px 16px }
     .avatar{ width:32px; height:32px }
     .title b{ font-size:14px }
   }
-
   @media (max-width:1024px){
     #site-nav{ display:none; width:100% }
     #site-nav.open{
@@ -147,32 +125,7 @@
     }
   }
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Luca Ardito — Politecnico di Torino (EN)",
-  "jobTitle": "Associate Professor",
-  "affiliation": {
-    "@type": "CollegeOrUniversity",
-    "name": "Politecnico di Torino",
-    "department": "DAUIN"
-  },
-  "url": "https://luca.ardi.to",
-  "image": "https://softeng.polito.it/ardito/photo.jpg",
-  "email": "luca.ardito@polito.it",
-  "telephone": "+39 011 090 7032",
-  "sameAs": [
-    "https://softeng.polito.it/ardito/",
-    "https://x.com/luca_ardito_",
-    "https://www.linkedin.com/in/lucaardito/",
-    "https://www.researchgate.net/profile/Luca-Ardito",
-    "https://iris.polito.it/cris/rp/rp08554",
-    "https://www.smartotum.com"
-  ]
-}
-</script>
-<style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style></head>
+</head>
 <body>
   <header class="site">
     <div class="container site-inner">
@@ -185,7 +138,7 @@
       </div>
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
       <nav id="site-nav">
-        <a href="#about" aria-current="page">Profile</a>
+        <a href="#about">Profile</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#teaching">Teaching</a>
@@ -200,7 +153,7 @@
       <div class="hero-inner">
         <div>
           <h1>Luca Ardito</h1>
-          <p>Associate Professor at the Department of Control and Computer Engineering (DAUIN), Politecnico di Torino. My research interests include software engineering, the Internet of Things (IoT), testing, AI engineering, and energy‑efficient software. I carry out <strong>technology transfer</strong> activities through <a href="https://www.smartotum.com/?utm_source=polito" target="_blank" rel="noopener">Smartotum</a>, a Politecnico spin‑off focused on smart home, energy monitoring, and building automation.</p>
+          <p>Associate Professor at the Department of Control and Computer Engineering (DAUIN), Politecnico di Torino. My research interests include software engineering, the Internet of Things (IoT), testing, AI engineering, and energy‑efficient software. I carry out <strong>technology transfer</strong> activities through <a href="https://www.smartotum.com" target="_blank" rel="noopener">Smartotum</a>, a Politecnico spin‑off focused on smart home, energy monitoring, and building automation.</p>
           <div class="tags">
             <span class="pill">IoT</span>
             <span class="pill">Green Software</span>
@@ -251,14 +204,10 @@
           <p>Fundamentals of the object‑oriented paradigm in Java, software life‑cycle management, and key tools (version control, build, testing) for medium‑sized projects.</p>
         </article>
         <article class="card">
-           <h3>Empirical Research Methods — PhD</h3>
-           <p>Introduces methods and tools to: conduct systematic literature reviews; design, plan, and run experiments and empirical studies; collect data from heterogeneous sources (text, repositories, human subject observation); build statistical models from product, process, and experimental data; and analyse the intersection of ethics and computer science when using empirical methods.</p>
+          <h3>Empirical Research Methods — PhD</h3>
+          <p>Introduces methods and tools to: conduct systematic literature reviews; design, plan, and run experiments and empirical studies; collect data from heterogeneous sources (tex>
         </article>
       </div>
-      <article class="card">
-        <h3>Empirical Research Methods — PhD</h3>
-        <p>Introduces methods and tools to: conduct systematic literature reviews; design, plan, and run experiments and empirical studies; collect data from heterogeneous sources (text, repositories, human subject observation); build statistical models from product, process, and experimental data; and analyse the intersection of ethics and computer science when using empirical methods.</p>
-      </article>
     </section>
 
     <section id="contact">
@@ -282,45 +231,45 @@
             </a>
           </div>
         </article>
-        <article class="card">
+                <article class="card">
           <h3>Profiles and databases</h3>
           <p>My official research profiles can be found on the following international databases:</p>
           <div class="social-links">
             <a class="social-link" href="https://scholar.google.com/citations?user=d0cifHcAAAAJ" target="_blank" rel="noopener">
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" role="img">
-	        <path fill="currentColor" d="M12 3 3 9l9 6 9-6-9-6Zm0 8.2L6.8 9 12 5.8 17.2 9 12 11.2Z"></path>
-	        <path fill="currentColor" d="M5 13v3.5C5 18.4 8.1 20 12 20s7-1.6 7-3.5V13l-7 4.5L5 13Z"></path>
-	      </svg>
+                <path fill="currentColor" d="M12 3 3 9l9 6 9-6-9-6Zm0 8.2L6.8 9 12 5.8 17.2 9 12 11.2Z"/>
+                <path fill="currentColor" d="M5 13v3.5C5 18.4 8.1 20 12 20s7-1.6 7-3.5V13l-7 4.5L5 13Z"/>
+              </svg>
               <span>Google Scholar</span>
             </a>
             <a class="social-link" href="https://www.scopus.com/authid/detail.uri?authorId=36184897700" target="_blank" rel="noopener">
-	      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" role="img">
-		<circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle>
-		<text x="12" y="16" text-anchor="middle" font-size="12" font-family="system-ui,Arial" fill="currentColor">S</text>
-	      </svg>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                <text x="12" y="16" text-anchor="middle" font-size="12" font-family="system-ui,Arial" fill="currentColor">S</text>
+              </svg>
               <span>Scopus</span>
             </a>
             <a class="social-link" href="https://www.webofscience.com/wos/author/record/AAE-2757-2019" target="_blank" rel="noopener">
-	      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" role="img">
-		<rect x="3" y="4" width="18" height="16" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="2"></rect>
-		<text x="12" y="16" text-anchor="middle" font-size="9" font-family="system-ui,Arial" fill="currentColor">WoS</text>
-	      </svg>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <rect x="3" y="4" width="18" height="16" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                <text x="12" y="16" text-anchor="middle" font-size="9" font-family="system-ui,Arial" fill="currentColor">WoS</text>
+              </svg>
               <span>Web of Science</span>
             </a>
             <a class="social-link" href="https://orcid.org/0000-0002-0501-7886" target="_blank" rel="noopener">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" role="img">
-              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle>
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
               <text x="9.1" y="16" font-size="8" font-family="system-ui,Arial" fill="currentColor">i</text>
               <text x="12.6" y="16" font-size="8" font-family="system-ui,Arial" fill="currentColor">D</text>
             </svg>
               <span>ORCID</span>
             </a>
             <a class="social-link" href="https://iris.polito.it/cris/rp/rp08554" target="_blank" rel="noopener">
-	      <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6 4h12a1 1 0 0 1 1 1v14l-7-3-7 3V5a1 1 0 0 1 1-1Z"></path></svg>
+              <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6 4h12a1 1 0 0 1 1 1v14l-7-3-7 3V5a1 1 0 0 1 1-1Z"/></svg>
               <span>IRIS Politecnico di Torino</span>
             </a>
               <a class="social-link" href="https://dblp.org/pid/82/10009.html" target="_blank" rel="noopener">
-	      <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle><text x="12" y="16" text-anchor="middle" font-size="8" font-family="system-ui,Arial" fill="currentColor">DB</text></svg>
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="16" text-anchor="middle" font-siz>
               <span>DBLP</span>
             </a>
           </div>
@@ -330,54 +279,34 @@
   </main>
 
   <footer>
-    <p>© Luca Ardito — Last update: November 2025 · <a href="https://softeng.polito.it/ardito/">Versione italiana</a></p>
+    <p>© Luca Ardito — Last update: October 2025 · <a href="https://softeng.polito.it/ardito/">Versione italiana</a></p>
   </footer>
 
 <script>
 (function(){
-  const sections = Array.from(document.querySelectorAll('main section[id]'));
-  const nav = document.getElementById('site-nav');
-  const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
-  const toggle = document.querySelector('.menu-toggle');
-
-  function getOffset(){ return window.innerWidth <= 640 ? 86 : 130; }
-
-  function setActive(id){
-    navLinks.forEach(a=>{
-      if(a.getAttribute('href') === '#' + id) a.setAttribute('aria-current','page');
-      else a.removeAttribute('aria-current');
-    });
-  }
-
-  function update(){
-    const pos = window.scrollY + getOffset();
-    let current = sections[0]?.id || '';
-    for(const sec of sections){
-      const top = sec.offsetTop, bottom = top + sec.offsetHeight;
-      if(pos >= top && pos < bottom){ current = sec.id; break; }
-    }
-    setActive(current);
-  }
-
-  function closeMenu(){
-    if(!nav) return;
-    nav.classList.remove('open');
-    toggle?.setAttribute('aria-expanded','false');
-  }
-
-  toggle?.addEventListener('click', ()=>{
-    const isOpen = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen ? 'true':'false');
-  });
-
-  navLinks.forEach(a=>a.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeMenu(); });
-  window.addEventListener('resize', ()=>{ if(window.innerWidth>640) closeMenu(); });
-
-  window.addEventListener('scroll', update, {passive:true});
-  window.addEventListener('load', update);
-  window.addEventListener('hashchange', update);
-  update();
+const sections = Array.from(document.querySelectorAll('main section[id]'));
+const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+function setActive(id){
+navLinks.forEach(a=>{
+if(a.getAttribute('href') === '#' + id) a.setAttribute('aria-current','page');
+else a.removeAttribute('aria-current');
+});
+}
+function update(){
+const offset = 130; // header height + spacing
+const pos = window.scrollY + offset;
+let current = sections[0]?.id || '';
+for(const sec of sections){
+const top = sec.offsetTop;
+const bottom = top + sec.offsetHeight;
+if(pos >= top && pos < bottom){ current = sec.id; break; }
+}
+setActive(current);
+}
+window.addEventListener('scroll', update, {passive:true});
+window.addEventListener('load', update);
+window.addEventListener('hashchange', update);
+update();
 })();
 </script>
 
