@@ -1,0 +1,193 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luca Ardito — Politecnico di Torino</title>
+  <meta name="description" content="Academic page of Luca Ardito (Associate Professor, DAUIN — Politecnico di Torino): software engineering, IoT, gamification, green software, and technology transfer with Smartotum.">
+  <style>
+    :root { --accent:#ff6f00; --accent-2:#ff8f00; --bg:#ffffff; --fg:#111111; --muted:#5f646d; --surface:#ffffff; --border:#e0e0e0; --link:var(--accent); --link-hover:#ff9800; }
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;line-height:1.6}
+    a{color:var(--link);text-decoration:underline;text-underline-offset:2px}
+    a:hover{color:var(--link-hover)}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+
+    header.site{position:sticky;top:0;background:var(--bg);border-bottom:2px solid var(--accent);z-index:10}
+    .site-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--border)}
+    .title b{font-size:15px}
+    .title span{color:var(--muted);font-size:13px}
+    nav a{display:inline-block;padding:10px 12px;border-radius:8px;color:var(--fg);text-decoration:none}
+    nav a:hover,nav a[aria-current="page"]{background:#fff3e0;color:var(--accent)}
+    .lang-switch{font-size:14px;margin-left:auto}
+
+    .hero{background:var(--bg);border-bottom:1px solid var(--border)}
+    .hero-inner{display:grid;grid-template-columns:1fr;gap:22px;padding-block:28px;align-items:center}
+    @media(min-width:800px){.hero-inner{grid-template-columns:1.5fr .8fr}}
+    .hero h1{margin:0;font-size:clamp(26px,3.5vw,36px);line-height:1.2;color:var(--accent)}
+    .hero p{margin:6px 0 0;color:var(--muted);text-align:justify}
+    .tags{margin-top:20px;margin-bottom:24px}
+    .pill{background:var(--accent);color:#fff;border-radius:999px;padding:4px 10px;font-size:12px}
+    .hero-photo{justify-self:end}
+    .hero-photo .photo{width:260px;height:260px;border-radius:16px;object-fit:cover;border:1px solid var(--border);box-shadow:0 2px 10px rgba(0,0,0,.06)}
+
+    section{padding-block:28px;border-bottom:1px solid var(--border);background:var(--bg);scroll-margin-top:125px;}
+    section h2{margin:0 0 12px;font-size:20px;color:var(--accent)}
+
+    .grid{display:grid;gap:12px}
+    @media(min-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}
+
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
+    .card h3{margin:0 0 8px;color:var(--accent)}
+
+    .list{display:grid;gap:10px}
+    .list li{list-style:none;padding:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
+    .list small{color:var(--muted);display:block}
+
+    .social-links{display:grid;gap:10px}
+    .social-link{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);text-decoration:none;color:inherit}
+    .social-link:hover{border-color:var(--accent)}
+    .icon{width:20px;height:20px;flex:0 0 20px;display:inline-block}
+
+    footer{text-align:center;padding:28px 24px;color:var(--muted);border-top:2px solid var(--accent);background:var(--bg)}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <div class="brand">
+        <img class="avatar" src="/ardito/picture.png" alt="Photo of Luca Ardito" onerror="this.style.display='none'">
+        <div class="title">
+          <b>Luca Ardito</b>
+          <span>Associate Professor · DAUIN · Politecnico di Torino</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about" aria-current="page">Profile</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contacts</a>
+        <a class="lang-switch" href="index.html">Versione italiana</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="about">
+      <div class="hero-inner">
+        <div>
+          <h1>Luca Ardito</h1>
+          <p>Associate Professor at the Department of Control and Computer Engineering (DAUIN), Politecnico di Torino. My research interests include software engineering, the Internet of Things (IoT), testing, AI engineering, and energy‑efficient software. I carry out <strong>technology transfer</strong> activities through <a href="https://www.smartotum.com" target="_blank" rel="noopener">Smartotum</a>, a Politecnico spin‑off focused on smart home, energy monitoring, and building automation.</p>
+          <div class="tags">
+            <span class="pill">IoT</span>
+            <span class="pill">Green Software</span>
+            <span class="pill">AI Engineering</span>
+            <span class="pill">Testing</span>
+            <span class="pill">Gamification</span>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img class="photo" src="/ardito/picture.png" alt="Luca Ardito's picture" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="grid">
+        <article class="card"><h3>AI Engineering &amp; Quality</h3><p>Reference architectures and pipelines for trustworthy AI systems; MLOps; empirical measurement and evaluation of AI‑based software.</p></article>
+        <article class="card"><h3>Green &amp; Energy‑Aware Software</h3><p>Metrics and techniques for reducing the energy consumption of mobile and cloud applications; reproducible benchmarks and analysis.</p></article>
+        <article class="card"><h3>Internet of Things</h3><p>IoT solutions for smart home and energy management: edge/cloud architectures, interoperability, privacy and security by design.</p></article>
+        <article class="card"><h3>Gamification in Software Engineering Processes</h3><p>Game‑based mechanisms applied to requirements, code review, and testing to improve engagement, quality, and speed; quantitative metrics and controlled studies.</p></article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <ul class="list">
+        <li><b>Aldini, A.</b>; <b>Ardito, L.</b>; Bianco, G.; Valsesia, M. (2025). <i>A Rust library for behaviours assessment in software certification</i>. <u>IEEE Internet of Things Journal</u>.</li>
+        <li><b>Coppola, R.</b>; Fulcini, T.; <b>Ardito, L.</b>; Torchiano, M. (2025). <i>Kotlin Assimilating the Android Ecosystem: An Appraisal of Diffusion and Impact on Maintainability</i>. <u>The Journal of Systems and Software</u>, 222. DOI: 10.1016/j.jss.2025.112346.</li>
+        <li><b>Coppola, R.</b>; Fulcini, T.; <b>Ardito, L.</b>; Torchiano, M.; Alégroth, E. (2024). <i>On Effectiveness and efficiency of Gamified Exploratory GUI Testing</i>. <u>IEEE Transactions on Software Engineering</u>, 50(2), 322–337. DOI: 10.1109/TSE.2023.3348036.</li>
+      </ul>
+      <p class="muted">Full list available on <a href="https://iris.polito.it/cris/rp/rp08554" target="_blank" rel="noopener">IRIS</a>.</p>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Software Engineering — MSc in Computer Engineering</h3>
+          <p>Advanced course on principles and practices for large‑scale software development: requirements and UML, architecture and project management, CI/CD and testing. Strong focus on teamwork and industrial tools.</p>
+        </article>
+        <article class="card">
+          <h3>Information Systems — MSc in Management Engineering</h3>
+          <p>Concepts and methods for the analysis, design, and management of enterprise information systems. Topics include process modelling, UX, full life‑cycle design, and real‑world case studies in lab activities.</p>
+        </article>
+        <article class="card">
+          <h3>Object‑Oriented Programming — BSc in Computer Engineering</h3>
+          <p>Fundamentals of the object‑oriented paradigm in Java, software life‑cycle management, and key tools (version control, build, testing) for medium‑sized projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacts</h2>
+      <div class="grid">
+        <article class="card"><h3>Office</h3><p>DAUIN — Corso Castelfidardo 39, 10129 Torino (Italy)</p><p class="muted">Phone: +39 011 090 7032</p></article>
+        <article class="card"><h3>Email</h3><p>luca.ardito [at] polito.it</p></article>
+        <article class="card"><h3>Social</h3>
+          <div class="social-links">
+            <a class="social-link" href="https://x.com/luca_ardito_" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.243 2H21l-6.74 7.71L22 22h-6.65l-4.66-6.08L5.3 22H2l7.2-8.24L2 2h6.76l4.25 5.73L18.24 2Z" fill="currentColor"></path></svg>
+              <span>X (Twitter)</span>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/lucaardito/" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6v6H19v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V9Z" fill="currentColor"></path></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="social-link" href="https://www.researchgate.net/profile/Luca-Ardito" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.7 13.1c2 .1 3.3.7 4.2 2.1.6.9.9 2 .9 3.2h-2.4c0-1.6-.7-2.7-2.1-3.2-.6-.2-1.3-.3-2-.3H9.4V21H7V4h6.1c2.6 0 4.5 1.8 4.5 4.3 0 2.2-1.4 3.9-3.5 4.5l-.1.3 1.7 2.1h-2.8l-1.1-1.3H9.4v-1.8h3.3Zm-3.3-2.1h3.7c1.6 0 2.6-1 2.6-2.5S14.7 6 13.1 6H9.4v5Z" fill="currentColor"></path></svg>
+              <span>ResearchGate</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Luca Ardito — Last update: October 2025 · <a href="index.html">Versione italiana</a></p>
+  </footer>
+
+<script>
+(function(){
+const sections = Array.from(document.querySelectorAll('main section[id]'));
+const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+function setActive(id){
+navLinks.forEach(a=>{
+if(a.getAttribute('href') === '#' + id) a.setAttribute('aria-current','page');
+else a.removeAttribute('aria-current');
+});
+}
+function update(){
+const offset = 130; // header height + spacing
+const pos = window.scrollY + offset;
+let current = sections[0]?.id || '';
+for(const sec of sections){
+const top = sec.offsetTop;
+const bottom = top + sec.offsetHeight;
+if(pos >= top && pos < bottom){ current = sec.id; break; }
+}
+setActive(current);
+}
+window.addEventListener('scroll', update, {passive:true});
+window.addEventListener('load', update);
+window.addEventListener('hashchange', update);
+update();
+})();
+</script>
+
+
+</body></html>
